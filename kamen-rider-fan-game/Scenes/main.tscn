@@ -53,4 +53,5 @@ theme_override_font_sizes/font_size = 40
 text = "Quit"
 metadata/_edit_lock_ = true
 
+[connection signal="pressed" from="Map" to="." method="_on_map_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
