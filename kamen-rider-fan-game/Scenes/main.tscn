@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6gw7p5rblmnp"]
+[gd_scene load_steps=3 format=3 uid="uid://b6gw7p5rblmnp"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_7u77a"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jjgbg"]
 
 [node name="Main" type="Node2D"]
 
@@ -9,3 +11,23 @@ self_modulate = Color(0.439216, 0.243137, 0.219608, 1)
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = SubResource("CanvasTexture_7u77a")
+metadata/_edit_lock_ = true
+
+[node name="Map" type="Button" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 106.0
+offset_top = 887.0
+offset_right = 299.0
+offset_bottom = 999.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "Map"
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(0.431014, 0.76286, 0.830926, 1)
+position = Vector2(953, 543)
+scale = Vector2(422.75, 671.25)
+texture = SubResource("CanvasTexture_jjgbg")
