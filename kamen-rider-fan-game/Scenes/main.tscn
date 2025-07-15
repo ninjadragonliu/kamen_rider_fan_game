@@ -16,17 +16,65 @@ offset_bottom = 1080.0
 texture = SubResource("CanvasTexture_7u77a")
 metadata/_edit_lock_ = true
 
-[node name="Map" type="Button" parent="."]
+[node name="Username" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 50
+text = "Username:"
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="Username"]
+layout_mode = 0
+offset_left = 271.0
+offset_top = 1.0
+offset_right = 489.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 50
+text = "John Doe"
+
+[node name="PlayerID" type="Label" parent="."]
+offset_left = 7.0
+offset_top = 62.0
+offset_right = 237.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 50
+text = "Player ID:"
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="PlayerID"]
+layout_mode = 0
+offset_left = 237.0
+offset_right = 494.0
+offset_bottom = 69.0
+theme_override_font_sizes/font_size = 50
+text = "123456789"
+
+[node name="Play" type="Button" parent="."]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 106.0
-offset_top = 887.0
-offset_right = 299.0
-offset_bottom = 999.0
+offset_left = 850.0
+offset_top = 890.0
+offset_right = 1043.0
+offset_bottom = 1002.0
 grow_vertical = 0
 theme_override_font_sizes/font_size = 50
-text = "Map"
+text = "Play"
+metadata/_edit_lock_ = true
+
+[node name="Shop" type="Button" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 1517.0
+offset_top = 895.0
+offset_right = 1710.0
+offset_bottom = 1007.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "Shop"
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -53,5 +101,5 @@ theme_override_font_sizes/font_size = 40
 text = "Quit"
 metadata/_edit_lock_ = true
 
-[connection signal="pressed" from="Map" to="." method="_on_map_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_map_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
